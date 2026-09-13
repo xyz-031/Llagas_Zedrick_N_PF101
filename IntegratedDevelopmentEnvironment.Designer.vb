@@ -367,6 +367,7 @@ Partial Class IntegratedDevelopmentEnvironment
         Controls.Add(Panel3)
         Controls.Add(Panel1)
         Controls.Add(Panel2)
+        FormBorderStyle = FormBorderStyle.FixedSingle
         MaximizeBox = False
         Name = "IntegratedDevelopmentEnvironment"
         ShowIcon = False

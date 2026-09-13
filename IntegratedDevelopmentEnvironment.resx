@@ -963,7 +963,7 @@ A section that is used to view and modify the contents of the project. A Visual 
   <data name="PictureBox4.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAQ4AAAJgCAYAAAB7p40SAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        vQAADr0BR/uQrQAAbJhJREFUeF7tveuXHcV1uJ3/BEkDEgKE7ndpdEH3mdFdM6A7CHThIiRruAhkJAQI
+        vAAADrwBlbxySQAAbJhJREFUeF7tveuXHcV1uJ3/BEkDEgKE7ndpdEH3mdFdM6A7CHThIiRruAhkJAQI
         AgghkMCDI24yMhgCBmwSjx1sgh2CYxKMHWxHjrEdJ+tdb7LerF/W7xMfst+165w6p2rXru7dZ0739Jmz
         Pzxr5nR3XbpP7aereqar/uySSy4BRVGULPwZ3aAoipKGikNRlMz82fz580FRFMWFioJixHFw5/+jKIpi
         UHEoipIZsTjoRkVR2heJE1QciqJ4SJyg4lAUxUPiBBWHoigeEieoOBSlYF599VX4/PPPA5566qng2OFA
@@ -1432,7 +1432,7 @@ A section that is used to view and modify the contents of the project. A Visual 
   <data name="PictureBox5.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAPgAAAHQCAYAAACMWafkAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        vgAADr4B6kKxwAAAWUlJREFUeF7tvXmYFFWWsG+3PZ8LKgjKTlFAsVNsxVLFVkWxqOxSLAVUUayCLELJ
+        vQAADr0BR/uQrQAAWUlJREFUeF7tvXmYFFWWsG+3PZ8LKgjKTlFAsVNsxVLFVkWxqOxSLAVUUayCLELJ
         Dsqutju4lAg6dCv7KiLYpYJbIyii4NpdTbczzzffr2eemW6ne6anHWY5v+fczMiKOPdEZmRxM6Iy6/zx
         PkVE3HviRhJv3Bs3M05c07x5c+jfvz/gX0EQkhfO42vcNgiCkFxwHovggpAicB6L4ILgkX379sE333yj
         8cwzz2hlg4DzWAQXBI/s378fXn31VRg5cqTizJkzySt4wabX4fXXXdhUoJWvKrif7Qv6ui4LQnUBe/CH
@@ -1835,7 +1835,7 @@ It is divided intro several sections:
   <data name="PictureBox6.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAABY8AAABSCAYAAAAclCsgAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        vwAADr8BOAVTJAAAPPxJREFUeF7tnf23HUWZ7+c/kSSEl0QCISGQBMzLCYHEEKLDSxQMYc5VI2BgBGYS
+        vgAADr4B6kKxwAAAPPxJREFUeF7tnf23HUWZ7+c/kSSEl0QCISGQBMzLCYHEEKLDSxQMYc5VI2BgBGYS
         NCw9geBR3hJEFMwZwAiBCIgwosS3CQSYARmVuRFHMbneu7yzrs6sNXOdWWOcu+qub+9d+1Q/9VR39eve
         +5zvD591TnfX61NPdVd9u3b1n7zrXe8yhBBCCCGEEEIIIYQQQojLn8gThBBCCCGEEEIIIYQQQgjFY0II
         IYQQQgghhBBCCCEeFI8JIYQQQgghhBBCCCGEeFA8JoQQQgghhBBCCCGEEOJB8ZgQQgghhBBCCCF9Y+XK
@@ -4640,7 +4640,7 @@ It is divided intro several sections:
   <data name="PictureBox8.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAB30AAAQBCAYAAAAuFJAPAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAS
-        cgAAEnIBXmVb4wAA/7JJREFUeF7s3fufFOWd9//vf0ISN3d2M5s1cbmTEaOOTG4TA248BcMa45hEs6zZ
+        cQAAEnEB89x6jgAA/7JJREFUeF7s3fufFOWd9//vf0ISN3d2M5s1cbmTEaOOTG4TA248BcMa45hEs6zZ
         9bgaFINhNqIb8BQ0YlTiiC4oWYKgEsCg7SEgyhmcGQZa5uQMwzAnmunpx30/Pt/HVd1Xz9VXXVXdPdM9
         09W8fng+ZKquU11V40zXe66q/2/GjBkCAAAAAAAAAAAAAIim/8/eAAAAAAAAAAAAAACIDkJfAAAAAAAA
         AAAAAIgwQl8AAAAAAAAAAAAAiDBCXwAAAAAAAAAAAACIMEJfAAAAAAAAAAAAAIgwQl8AAAAAAAAAAAAA

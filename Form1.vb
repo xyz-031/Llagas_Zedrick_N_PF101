@@ -88,4 +88,29 @@ Public Class Form1
         Class_Orientation.Show()
         Me.Hide()
     End Sub
+
+    Private Sub AVBNetBasicControlsToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles AVBNetBasicControlsToolStripMenuItem.Click
+        VBNetBasicControls.Show()
+        Me.Hide()
+    End Sub
+
+    Private Sub BContrToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles BContrToolStripMenuItem.Click
+        ControlProperties.Show()
+        Me.Hide()
+    End Sub
+
+    Private Sub CControlMethodsToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles CControlMethodsToolStripMenuItem.Click
+        ControlMethod.Show()
+        Me.Hide()
+    End Sub
+
+    Private Sub DControlEventsToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles DControlEventsToolStripMenuItem.Click
+        ControlEvents.Show()
+        Me.Hide()
+    End Sub
+
+    Private Sub EFormPropertiesToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles EFormPropertiesToolStripMenuItem.Click
+        FormProperties.Show()
+        Me.Hide()
+    End Sub
 End Class

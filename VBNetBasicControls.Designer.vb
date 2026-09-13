@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class Class_Orientation
+Partial Class VBNetBasicControls
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -22,7 +22,7 @@ Partial Class Class_Orientation
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Class_Orientation))
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(VBNetBasicControls))
         Panel1 = New Panel()
         RichTextBox1 = New RichTextBox()
         BackBtn = New Button()
@@ -41,28 +41,27 @@ Partial Class Class_Orientation
         ' 
         ' RichTextBox1
         ' 
-        RichTextBox1.BackColor = Color.White
-        RichTextBox1.BorderStyle = BorderStyle.None
+        RichTextBox1.BackColor = SystemColors.Control
+        RichTextBox1.BorderStyle = BorderStyle.FixedSingle
         RichTextBox1.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        RichTextBox1.Location = New Point(12, 13)
+        RichTextBox1.Location = New Point(13, 15)
         RichTextBox1.Name = "RichTextBox1"
-        RichTextBox1.ReadOnly = True
-        RichTextBox1.Size = New Size(1214, 565)
+        RichTextBox1.Size = New Size(1212, 569)
         RichTextBox1.TabIndex = 8
         RichTextBox1.Text = resources.GetString("RichTextBox1.Text")
         ' 
         ' BackBtn
         ' 
         BackBtn.FlatStyle = FlatStyle.Flat
-        BackBtn.Font = New Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        BackBtn.Location = New Point(12, 584)
+        BackBtn.Font = New Font("Segoe UI Semibold", 12F, FontStyle.Bold)
+        BackBtn.Location = New Point(13, 590)
         BackBtn.Name = "BackBtn"
-        BackBtn.Size = New Size(1214, 52)
+        BackBtn.Size = New Size(1212, 46)
         BackBtn.TabIndex = 7
         BackBtn.Text = "Back"
         BackBtn.UseVisualStyleBackColor = True
         ' 
-        ' Class_Orientation
+        ' VBNetBasicControls
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
@@ -71,10 +70,10 @@ Partial Class Class_Orientation
         Controls.Add(Panel1)
         FormBorderStyle = FormBorderStyle.FixedSingle
         MaximizeBox = False
-        Name = "Class_Orientation"
+        Name = "VBNetBasicControls"
         ShowIcon = False
         StartPosition = FormStartPosition.CenterScreen
-        Text = "Class Orientation"
+        Text = "VB.Net Basic Controls"
         Panel1.ResumeLayout(False)
         ResumeLayout(False)
     End Sub

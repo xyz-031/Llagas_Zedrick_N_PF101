@@ -36,6 +36,11 @@ Partial Class Form1
         WhatIsAProgramMadeOfToolStripMenuItem = New ToolStripMenuItem()
         VisualBasic2022IDEToolStripMenuItem = New ToolStripMenuItem()
         PlanningApplicationsAndDesigningInterfacesToolStripMenuItem = New ToolStripMenuItem()
+        AVBNetBasicControlsToolStripMenuItem = New ToolStripMenuItem()
+        BContrToolStripMenuItem = New ToolStripMenuItem()
+        CControlMethodsToolStripMenuItem = New ToolStripMenuItem()
+        DControlEventsToolStripMenuItem = New ToolStripMenuItem()
+        EFormPropertiesToolStripMenuItem = New ToolStripMenuItem()
         DataHandlingToolStripMenuItem = New ToolStripMenuItem()
         CodingWithVariableNameConstantsAndCalculcationsToolStripMenuItem = New ToolStripMenuItem()
         ArraysToolStripMenuItem = New ToolStripMenuItem()
@@ -53,12 +58,6 @@ Partial Class Form1
         SBIT2EToolStripMenuItem = New ToolStripMenuItem()
         ExitToolStripMenuItem = New ToolStripMenuItem()
         PictureBox1 = New PictureBox()
-        AVBNetBasicControlsToolStripMenuItem = New ToolStripMenuItem()
-        BContrToolStripMenuItem = New ToolStripMenuItem()
-        CControlMethodsToolStripMenuItem = New ToolStripMenuItem()
-        DControlEventsToolStripMenuItem = New ToolStripMenuItem()
-        EFormPropertiesToolStripMenuItem = New ToolStripMenuItem()
-        FAnchoringAndDockingToolStripMenuItem = New ToolStripMenuItem()
         MenuStrip1.SuspendLayout()
         CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
@@ -155,10 +154,40 @@ Partial Class Form1
         ' PlanningApplicationsAndDesigningInterfacesToolStripMenuItem
         ' 
         PlanningApplicationsAndDesigningInterfacesToolStripMenuItem.BackColor = Color.OldLace
-        PlanningApplicationsAndDesigningInterfacesToolStripMenuItem.DropDownItems.AddRange(New ToolStripItem() {AVBNetBasicControlsToolStripMenuItem, BContrToolStripMenuItem, CControlMethodsToolStripMenuItem, DControlEventsToolStripMenuItem, EFormPropertiesToolStripMenuItem, FAnchoringAndDockingToolStripMenuItem})
+        PlanningApplicationsAndDesigningInterfacesToolStripMenuItem.DropDownItems.AddRange(New ToolStripItem() {AVBNetBasicControlsToolStripMenuItem, BContrToolStripMenuItem, CControlMethodsToolStripMenuItem, DControlEventsToolStripMenuItem, EFormPropertiesToolStripMenuItem})
         PlanningApplicationsAndDesigningInterfacesToolStripMenuItem.Name = "PlanningApplicationsAndDesigningInterfacesToolStripMenuItem"
         PlanningApplicationsAndDesigningInterfacesToolStripMenuItem.Size = New Size(558, 30)
         PlanningApplicationsAndDesigningInterfacesToolStripMenuItem.Text = "4. Planning Applications and Designing Interfaces"
+        ' 
+        ' AVBNetBasicControlsToolStripMenuItem
+        ' 
+        AVBNetBasicControlsToolStripMenuItem.Name = "AVBNetBasicControlsToolStripMenuItem"
+        AVBNetBasicControlsToolStripMenuItem.Size = New Size(288, 30)
+        AVBNetBasicControlsToolStripMenuItem.Text = "A. VB.Net Basic Controls"
+        ' 
+        ' BContrToolStripMenuItem
+        ' 
+        BContrToolStripMenuItem.Name = "BContrToolStripMenuItem"
+        BContrToolStripMenuItem.Size = New Size(288, 30)
+        BContrToolStripMenuItem.Text = "B. Control Properties"
+        ' 
+        ' CControlMethodsToolStripMenuItem
+        ' 
+        CControlMethodsToolStripMenuItem.Name = "CControlMethodsToolStripMenuItem"
+        CControlMethodsToolStripMenuItem.Size = New Size(288, 30)
+        CControlMethodsToolStripMenuItem.Text = "C. Control Methods"
+        ' 
+        ' DControlEventsToolStripMenuItem
+        ' 
+        DControlEventsToolStripMenuItem.Name = "DControlEventsToolStripMenuItem"
+        DControlEventsToolStripMenuItem.Size = New Size(288, 30)
+        DControlEventsToolStripMenuItem.Text = "D. Control Events"
+        ' 
+        ' EFormPropertiesToolStripMenuItem
+        ' 
+        EFormPropertiesToolStripMenuItem.Name = "EFormPropertiesToolStripMenuItem"
+        EFormPropertiesToolStripMenuItem.Size = New Size(288, 30)
+        EFormPropertiesToolStripMenuItem.Text = "E. Form Properties"
         ' 
         ' DataHandlingToolStripMenuItem
         ' 
@@ -284,42 +313,6 @@ Partial Class Form1
         PictureBox1.TabIndex = 1
         PictureBox1.TabStop = False
         ' 
-        ' AVBNetBasicControlsToolStripMenuItem
-        ' 
-        AVBNetBasicControlsToolStripMenuItem.Name = "AVBNetBasicControlsToolStripMenuItem"
-        AVBNetBasicControlsToolStripMenuItem.Size = New Size(304, 30)
-        AVBNetBasicControlsToolStripMenuItem.Text = "A. VB.Net Basic Controls"
-        ' 
-        ' BContrToolStripMenuItem
-        ' 
-        BContrToolStripMenuItem.Name = "BContrToolStripMenuItem"
-        BContrToolStripMenuItem.Size = New Size(304, 30)
-        BContrToolStripMenuItem.Text = "B. Control Properties"
-        ' 
-        ' CControlMethodsToolStripMenuItem
-        ' 
-        CControlMethodsToolStripMenuItem.Name = "CControlMethodsToolStripMenuItem"
-        CControlMethodsToolStripMenuItem.Size = New Size(304, 30)
-        CControlMethodsToolStripMenuItem.Text = "C. Control Methods"
-        ' 
-        ' DControlEventsToolStripMenuItem
-        ' 
-        DControlEventsToolStripMenuItem.Name = "DControlEventsToolStripMenuItem"
-        DControlEventsToolStripMenuItem.Size = New Size(304, 30)
-        DControlEventsToolStripMenuItem.Text = "D. Control Events"
-        ' 
-        ' EFormPropertiesToolStripMenuItem
-        ' 
-        EFormPropertiesToolStripMenuItem.Name = "EFormPropertiesToolStripMenuItem"
-        EFormPropertiesToolStripMenuItem.Size = New Size(304, 30)
-        EFormPropertiesToolStripMenuItem.Text = "E. Form Properties"
-        ' 
-        ' FAnchoringAndDockingToolStripMenuItem
-        ' 
-        FAnchoringAndDockingToolStripMenuItem.Name = "FAnchoringAndDockingToolStripMenuItem"
-        FAnchoringAndDockingToolStripMenuItem.Size = New Size(304, 30)
-        FAnchoringAndDockingToolStripMenuItem.Text = "F. Anchoring and Docking"
-        ' 
         ' Form1
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
@@ -379,6 +372,5 @@ Partial Class Form1
     Friend WithEvents CControlMethodsToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents DControlEventsToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents EFormPropertiesToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents FAnchoringAndDockingToolStripMenuItem As ToolStripMenuItem
 
 End Class
