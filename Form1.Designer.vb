@@ -42,6 +42,10 @@ Partial Class Form1
         DControlEventsToolStripMenuItem = New ToolStripMenuItem()
         EFormPropertiesToolStripMenuItem = New ToolStripMenuItem()
         DataHandlingToolStripMenuItem = New ToolStripMenuItem()
+        AToolStripMenuItem = New ToolStripMenuItem()
+        BConstantModifiersStatementAndDirectivesToolStripMenuItem = New ToolStripMenuItem()
+        COperatorsAndDataTypesToolStripMenuItem = New ToolStripMenuItem()
+        DConvertingDataTypesToolStripMenuItem = New ToolStripMenuItem()
         CodingWithVariableNameConstantsAndCalculcationsToolStripMenuItem = New ToolStripMenuItem()
         ArraysToolStripMenuItem = New ToolStripMenuItem()
         WorkingWithControlsAndPropertiesToolStripMenuItem = New ToolStripMenuItem()
@@ -192,9 +196,34 @@ Partial Class Form1
         ' DataHandlingToolStripMenuItem
         ' 
         DataHandlingToolStripMenuItem.BackColor = Color.OldLace
+        DataHandlingToolStripMenuItem.DropDownItems.AddRange(New ToolStripItem() {AToolStripMenuItem, BConstantModifiersStatementAndDirectivesToolStripMenuItem, COperatorsAndDataTypesToolStripMenuItem, DConvertingDataTypesToolStripMenuItem})
         DataHandlingToolStripMenuItem.Name = "DataHandlingToolStripMenuItem"
         DataHandlingToolStripMenuItem.Size = New Size(558, 30)
         DataHandlingToolStripMenuItem.Text = "5. Data Handling"
+        ' 
+        ' AToolStripMenuItem
+        ' 
+        AToolStripMenuItem.Name = "AToolStripMenuItem"
+        AToolStripMenuItem.Size = New Size(411, 30)
+        AToolStripMenuItem.Text = "A. Variables"
+        ' 
+        ' BConstantModifiersStatementAndDirectivesToolStripMenuItem
+        ' 
+        BConstantModifiersStatementAndDirectivesToolStripMenuItem.Name = "BConstantModifiersStatementAndDirectivesToolStripMenuItem"
+        BConstantModifiersStatementAndDirectivesToolStripMenuItem.Size = New Size(411, 30)
+        BConstantModifiersStatementAndDirectivesToolStripMenuItem.Text = "B. Constants"
+        ' 
+        ' COperatorsAndDataTypesToolStripMenuItem
+        ' 
+        COperatorsAndDataTypesToolStripMenuItem.Name = "COperatorsAndDataTypesToolStripMenuItem"
+        COperatorsAndDataTypesToolStripMenuItem.Size = New Size(411, 30)
+        COperatorsAndDataTypesToolStripMenuItem.Text = "C. Data Types and Arithmetic Operators"
+        ' 
+        ' DConvertingDataTypesToolStripMenuItem
+        ' 
+        DConvertingDataTypesToolStripMenuItem.Name = "DConvertingDataTypesToolStripMenuItem"
+        DConvertingDataTypesToolStripMenuItem.Size = New Size(411, 30)
+        DConvertingDataTypesToolStripMenuItem.Text = "D. Converting Data Types"
         ' 
         ' CodingWithVariableNameConstantsAndCalculcationsToolStripMenuItem
         ' 
@@ -372,5 +401,9 @@ Partial Class Form1
     Friend WithEvents CControlMethodsToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents DControlEventsToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents EFormPropertiesToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents AToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents BConstantModifiersStatementAndDirectivesToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents COperatorsAndDataTypesToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents DConvertingDataTypesToolStripMenuItem As ToolStripMenuItem
 
 End Class

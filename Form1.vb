@@ -113,4 +113,24 @@ Public Class Form1
         FormProperties.Show()
         Me.Hide()
     End Sub
+
+    Private Sub AToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles AToolStripMenuItem.Click
+        Variables.Show()
+        Me.Hide()
+    End Sub
+
+    Private Sub BConstantModifiersStatementAndDirectivesToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles BConstantModifiersStatementAndDirectivesToolStripMenuItem.Click
+        Constants.Show()
+        Me.Hide()
+    End Sub
+
+    Private Sub COperatorsAndDataTypesToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles COperatorsAndDataTypesToolStripMenuItem.Click
+        DataTypesAndArithmeticOperators.Show()
+        Me.Hide()
+    End Sub
+
+    Private Sub DConvertingDataTypesToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles DConvertingDataTypesToolStripMenuItem.Click
+        ConvertingDataTypes.Show()
+        Me.Hide()
+    End Sub
 End Class
