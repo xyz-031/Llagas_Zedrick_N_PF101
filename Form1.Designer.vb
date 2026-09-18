@@ -47,6 +47,11 @@ Partial Class Form1
         COperatorsAndDataTypesToolStripMenuItem = New ToolStripMenuItem()
         DConvertingDataTypesToolStripMenuItem = New ToolStripMenuItem()
         CodingWithVariableNameConstantsAndCalculcationsToolStripMenuItem = New ToolStripMenuItem()
+        ADecisionStatementsToolStripMenuItem = New ToolStripMenuItem()
+        BRelationalOperatorsToolStripMenuItem = New ToolStripMenuItem()
+        CBooleanExpressionsToolStripMenuItem = New ToolStripMenuItem()
+        DUsingRelationalOperatorsWithMathOperatorsToolStripMenuItem = New ToolStripMenuItem()
+        ELogicalOperatorsToolStripMenuItem = New ToolStripMenuItem()
         ArraysToolStripMenuItem = New ToolStripMenuItem()
         WorkingWithControlsAndPropertiesToolStripMenuItem = New ToolStripMenuItem()
         MidtermExaminationToolStripMenuItem = New ToolStripMenuItem()
@@ -62,6 +67,7 @@ Partial Class Form1
         SBIT2EToolStripMenuItem = New ToolStripMenuItem()
         ExitToolStripMenuItem = New ToolStripMenuItem()
         PictureBox1 = New PictureBox()
+        FLoopingStatementToolStripMenuItem = New ToolStripMenuItem()
         MenuStrip1.SuspendLayout()
         CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
@@ -94,7 +100,7 @@ Partial Class Form1
         ' 
         ClassOrientationToolStripMenuItem.BackColor = Color.OldLace
         ClassOrientationToolStripMenuItem.Name = "ClassOrientationToolStripMenuItem"
-        ClassOrientationToolStripMenuItem.Size = New Size(558, 30)
+        ClassOrientationToolStripMenuItem.Size = New Size(490, 30)
         ClassOrientationToolStripMenuItem.Text = "1. Class Orientation"
         ' 
         ' IntroductionToOOPToolStripMenuItem
@@ -102,7 +108,7 @@ Partial Class Form1
         IntroductionToOOPToolStripMenuItem.BackColor = Color.OldLace
         IntroductionToOOPToolStripMenuItem.DropDownItems.AddRange(New ToolStripItem() {AClassesAndObjectsToolStripMenuItem, BEncapsulationToolStripMenuItem, CInheritanceToolStripMenuItem, DPolymorphismToolStripMenuItem})
         IntroductionToOOPToolStripMenuItem.Name = "IntroductionToOOPToolStripMenuItem"
-        IntroductionToOOPToolStripMenuItem.Size = New Size(558, 30)
+        IntroductionToOOPToolStripMenuItem.Size = New Size(490, 30)
         IntroductionToOOPToolStripMenuItem.Text = "2. Introduction to OOP"
         ' 
         ' AClassesAndObjectsToolStripMenuItem
@@ -134,7 +140,7 @@ Partial Class Form1
         GettingStartedWithToolStripMenuItem.BackColor = Color.OldLace
         GettingStartedWithToolStripMenuItem.DropDownItems.AddRange(New ToolStripItem() {DefiningComputerProgrammingAndTranslatorOfProgrammingLangToolStripMenuItem, WhatIsAProgramMadeOfToolStripMenuItem, VisualBasic2022IDEToolStripMenuItem})
         GettingStartedWithToolStripMenuItem.Name = "GettingStartedWithToolStripMenuItem"
-        GettingStartedWithToolStripMenuItem.Size = New Size(558, 30)
+        GettingStartedWithToolStripMenuItem.Size = New Size(490, 30)
         GettingStartedWithToolStripMenuItem.Text = "3. Getting Started with Microsoft Visual Basic .NET"
         ' 
         ' DefiningComputerProgrammingAndTranslatorOfProgrammingLangToolStripMenuItem
@@ -160,7 +166,7 @@ Partial Class Form1
         PlanningApplicationsAndDesigningInterfacesToolStripMenuItem.BackColor = Color.OldLace
         PlanningApplicationsAndDesigningInterfacesToolStripMenuItem.DropDownItems.AddRange(New ToolStripItem() {AVBNetBasicControlsToolStripMenuItem, BContrToolStripMenuItem, CControlMethodsToolStripMenuItem, DControlEventsToolStripMenuItem, EFormPropertiesToolStripMenuItem})
         PlanningApplicationsAndDesigningInterfacesToolStripMenuItem.Name = "PlanningApplicationsAndDesigningInterfacesToolStripMenuItem"
-        PlanningApplicationsAndDesigningInterfacesToolStripMenuItem.Size = New Size(558, 30)
+        PlanningApplicationsAndDesigningInterfacesToolStripMenuItem.Size = New Size(490, 30)
         PlanningApplicationsAndDesigningInterfacesToolStripMenuItem.Text = "4. Planning Applications and Designing Interfaces"
         ' 
         ' AVBNetBasicControlsToolStripMenuItem
@@ -198,7 +204,7 @@ Partial Class Form1
         DataHandlingToolStripMenuItem.BackColor = Color.OldLace
         DataHandlingToolStripMenuItem.DropDownItems.AddRange(New ToolStripItem() {AToolStripMenuItem, BConstantModifiersStatementAndDirectivesToolStripMenuItem, COperatorsAndDataTypesToolStripMenuItem, DConvertingDataTypesToolStripMenuItem})
         DataHandlingToolStripMenuItem.Name = "DataHandlingToolStripMenuItem"
-        DataHandlingToolStripMenuItem.Size = New Size(558, 30)
+        DataHandlingToolStripMenuItem.Size = New Size(490, 30)
         DataHandlingToolStripMenuItem.Text = "5. Data Handling"
         ' 
         ' AToolStripMenuItem
@@ -228,71 +234,102 @@ Partial Class Form1
         ' CodingWithVariableNameConstantsAndCalculcationsToolStripMenuItem
         ' 
         CodingWithVariableNameConstantsAndCalculcationsToolStripMenuItem.BackColor = Color.OldLace
+        CodingWithVariableNameConstantsAndCalculcationsToolStripMenuItem.DropDownItems.AddRange(New ToolStripItem() {ADecisionStatementsToolStripMenuItem, BRelationalOperatorsToolStripMenuItem, CBooleanExpressionsToolStripMenuItem, DUsingRelationalOperatorsWithMathOperatorsToolStripMenuItem, ELogicalOperatorsToolStripMenuItem, FLoopingStatementToolStripMenuItem})
         CodingWithVariableNameConstantsAndCalculcationsToolStripMenuItem.Name = "CodingWithVariableNameConstantsAndCalculcationsToolStripMenuItem"
-        CodingWithVariableNameConstantsAndCalculcationsToolStripMenuItem.Size = New Size(558, 30)
-        CodingWithVariableNameConstantsAndCalculcationsToolStripMenuItem.Text = "6. Coding with Variable Name Constants and Calculcations"
+        CodingWithVariableNameConstantsAndCalculcationsToolStripMenuItem.Size = New Size(490, 30)
+        CodingWithVariableNameConstantsAndCalculcationsToolStripMenuItem.Text = "6. The Selection and Repetition Structure"
+        ' 
+        ' ADecisionStatementsToolStripMenuItem
+        ' 
+        ADecisionStatementsToolStripMenuItem.Name = "ADecisionStatementsToolStripMenuItem"
+        ADecisionStatementsToolStripMenuItem.Size = New Size(500, 30)
+        ADecisionStatementsToolStripMenuItem.Text = "A. Decision Statements"
+        ' 
+        ' BRelationalOperatorsToolStripMenuItem
+        ' 
+        BRelationalOperatorsToolStripMenuItem.Name = "BRelationalOperatorsToolStripMenuItem"
+        BRelationalOperatorsToolStripMenuItem.Size = New Size(500, 30)
+        BRelationalOperatorsToolStripMenuItem.Text = "B. Relational Operators"
+        ' 
+        ' CBooleanExpressionsToolStripMenuItem
+        ' 
+        CBooleanExpressionsToolStripMenuItem.Name = "CBooleanExpressionsToolStripMenuItem"
+        CBooleanExpressionsToolStripMenuItem.Size = New Size(500, 30)
+        CBooleanExpressionsToolStripMenuItem.Text = "C. Boolean Expressions"
+        ' 
+        ' DUsingRelationalOperatorsWithMathOperatorsToolStripMenuItem
+        ' 
+        DUsingRelationalOperatorsWithMathOperatorsToolStripMenuItem.Name = "DUsingRelationalOperatorsWithMathOperatorsToolStripMenuItem"
+        DUsingRelationalOperatorsWithMathOperatorsToolStripMenuItem.Size = New Size(500, 30)
+        DUsingRelationalOperatorsWithMathOperatorsToolStripMenuItem.Text = "D. Using Relational Operators with Math Operators"
+        ' 
+        ' ELogicalOperatorsToolStripMenuItem
+        ' 
+        ELogicalOperatorsToolStripMenuItem.Name = "ELogicalOperatorsToolStripMenuItem"
+        ELogicalOperatorsToolStripMenuItem.Size = New Size(500, 30)
+        ELogicalOperatorsToolStripMenuItem.Text = "E. Logical Operators"
         ' 
         ' ArraysToolStripMenuItem
         ' 
         ArraysToolStripMenuItem.BackColor = Color.OldLace
         ArraysToolStripMenuItem.Name = "ArraysToolStripMenuItem"
-        ArraysToolStripMenuItem.Size = New Size(558, 30)
+        ArraysToolStripMenuItem.Size = New Size(490, 30)
         ArraysToolStripMenuItem.Text = "7. Arrays"
         ' 
         ' WorkingWithControlsAndPropertiesToolStripMenuItem
         ' 
         WorkingWithControlsAndPropertiesToolStripMenuItem.BackColor = Color.OldLace
         WorkingWithControlsAndPropertiesToolStripMenuItem.Name = "WorkingWithControlsAndPropertiesToolStripMenuItem"
-        WorkingWithControlsAndPropertiesToolStripMenuItem.Size = New Size(558, 30)
+        WorkingWithControlsAndPropertiesToolStripMenuItem.Size = New Size(490, 30)
         WorkingWithControlsAndPropertiesToolStripMenuItem.Text = "8. Working with Controls and Properties"
         ' 
         ' MidtermExaminationToolStripMenuItem
         ' 
         MidtermExaminationToolStripMenuItem.BackColor = Color.OldLace
         MidtermExaminationToolStripMenuItem.Name = "MidtermExaminationToolStripMenuItem"
-        MidtermExaminationToolStripMenuItem.Size = New Size(558, 30)
+        MidtermExaminationToolStripMenuItem.Size = New Size(490, 30)
         MidtermExaminationToolStripMenuItem.Text = "9. Midterm Examination"
         ' 
         ' DebuggingAndTracingToolStripMenuItem
         ' 
         DebuggingAndTracingToolStripMenuItem.BackColor = Color.OldLace
         DebuggingAndTracingToolStripMenuItem.Name = "DebuggingAndTracingToolStripMenuItem"
-        DebuggingAndTracingToolStripMenuItem.Size = New Size(558, 30)
+        DebuggingAndTracingToolStripMenuItem.Size = New Size(490, 30)
         DebuggingAndTracingToolStripMenuItem.Text = "10. Debugging and Tracing"
         ' 
         ' WorkingWithNETFrameworkAndMDIToolStripMenuItem
         ' 
         WorkingWithNETFrameworkAndMDIToolStripMenuItem.BackColor = Color.OldLace
         WorkingWithNETFrameworkAndMDIToolStripMenuItem.Name = "WorkingWithNETFrameworkAndMDIToolStripMenuItem"
-        WorkingWithNETFrameworkAndMDIToolStripMenuItem.Size = New Size(558, 30)
+        WorkingWithNETFrameworkAndMDIToolStripMenuItem.Size = New Size(490, 30)
         WorkingWithNETFrameworkAndMDIToolStripMenuItem.Text = "11. Working with .NET Framework and MDI"
         ' 
         ' DatabaseConnectionToolStripMenuItem
         ' 
         DatabaseConnectionToolStripMenuItem.BackColor = Color.OldLace
         DatabaseConnectionToolStripMenuItem.Name = "DatabaseConnectionToolStripMenuItem"
-        DatabaseConnectionToolStripMenuItem.Size = New Size(558, 30)
+        DatabaseConnectionToolStripMenuItem.Size = New Size(490, 30)
         DatabaseConnectionToolStripMenuItem.Text = "12. Database Connection"
         ' 
         ' DevelopingDataDrivenApplicationToolStripMenuItem
         ' 
         DevelopingDataDrivenApplicationToolStripMenuItem.BackColor = Color.OldLace
         DevelopingDataDrivenApplicationToolStripMenuItem.Name = "DevelopingDataDrivenApplicationToolStripMenuItem"
-        DevelopingDataDrivenApplicationToolStripMenuItem.Size = New Size(558, 30)
+        DevelopingDataDrivenApplicationToolStripMenuItem.Size = New Size(490, 30)
         DevelopingDataDrivenApplicationToolStripMenuItem.Text = "13. Developing Data Driven Application"
         ' 
         ' PresentationToolStripMenuItem
         ' 
         PresentationToolStripMenuItem.BackColor = Color.OldLace
         PresentationToolStripMenuItem.Name = "PresentationToolStripMenuItem"
-        PresentationToolStripMenuItem.Size = New Size(558, 30)
+        PresentationToolStripMenuItem.Size = New Size(490, 30)
         PresentationToolStripMenuItem.Text = "14. Presentation"
         ' 
         ' FinalExaminationToolStripMenuItem
         ' 
         FinalExaminationToolStripMenuItem.BackColor = Color.OldLace
         FinalExaminationToolStripMenuItem.Name = "FinalExaminationToolStripMenuItem"
-        FinalExaminationToolStripMenuItem.Size = New Size(558, 30)
+        FinalExaminationToolStripMenuItem.Size = New Size(490, 30)
         FinalExaminationToolStripMenuItem.Text = "16. Final Examination"
         ' 
         ' AnimationToolStripMenuItem
@@ -300,7 +337,7 @@ Partial Class Form1
         AnimationToolStripMenuItem.BackColor = Color.OldLace
         AnimationToolStripMenuItem.DropDownItems.AddRange(New ToolStripItem() {GameLevel1ToolStripMenuItem})
         AnimationToolStripMenuItem.Name = "AnimationToolStripMenuItem"
-        AnimationToolStripMenuItem.Size = New Size(558, 30)
+        AnimationToolStripMenuItem.Size = New Size(490, 30)
         AnimationToolStripMenuItem.Text = "17. Animation"
         ' 
         ' GameLevel1ToolStripMenuItem
@@ -313,7 +350,7 @@ Partial Class Form1
         ' 
         DataDToolStripMenuItem.BackColor = Color.OldLace
         DataDToolStripMenuItem.Name = "DataDToolStripMenuItem"
-        DataDToolStripMenuItem.Size = New Size(558, 30)
+        DataDToolStripMenuItem.Size = New Size(490, 30)
         DataDToolStripMenuItem.Text = "18. Data Driven"
         ' 
         ' SBIT2EToolStripMenuItem
@@ -341,6 +378,12 @@ Partial Class Form1
         PictureBox1.SizeMode = PictureBoxSizeMode.StretchImage
         PictureBox1.TabIndex = 1
         PictureBox1.TabStop = False
+        ' 
+        ' FLoopingStatementToolStripMenuItem
+        ' 
+        FLoopingStatementToolStripMenuItem.Name = "FLoopingStatementToolStripMenuItem"
+        FLoopingStatementToolStripMenuItem.Size = New Size(500, 30)
+        FLoopingStatementToolStripMenuItem.Text = "F. Looping Statement"
         ' 
         ' Form1
         ' 
@@ -405,5 +448,11 @@ Partial Class Form1
     Friend WithEvents BConstantModifiersStatementAndDirectivesToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents COperatorsAndDataTypesToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents DConvertingDataTypesToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents ADecisionStatementsToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents BRelationalOperatorsToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents CBooleanExpressionsToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents DUsingRelationalOperatorsWithMathOperatorsToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents ELogicalOperatorsToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents FLoopingStatementToolStripMenuItem As ToolStripMenuItem
 
 End Class

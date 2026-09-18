@@ -133,4 +133,34 @@ Public Class Form1
         ConvertingDataTypes.Show()
         Me.Hide()
     End Sub
+
+    Private Sub ADecisionStatementsToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ADecisionStatementsToolStripMenuItem.Click
+        DecisionStatements.Show()
+        Me.Hide()
+    End Sub
+
+    Private Sub BRelationalOperatorsToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles BRelationalOperatorsToolStripMenuItem.Click
+        RelationalOperators.Show()
+        Me.Hide()
+    End Sub
+
+    Private Sub CBooleanExpressionsToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles CBooleanExpressionsToolStripMenuItem.Click
+        BooleanExpressions.Show()
+        Me.Hide()
+    End Sub
+
+    Private Sub DUsingRelationalOperatorsWithMathOperatorsToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles DUsingRelationalOperatorsWithMathOperatorsToolStripMenuItem.Click
+        UsingRelationalOperatorsWithMathOperators.Show()
+        Me.Hide()
+    End Sub
+
+    Private Sub ELogicalOperatorsToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ELogicalOperatorsToolStripMenuItem.Click
+        LogicalOperators.Show()
+        Me.Hide()
+    End Sub
+
+    Private Sub FLoopingStatementToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles FLoopingStatementToolStripMenuItem.Click
+        LoopingStatements.Show()
+        Me.Hide()
+    End Sub
 End Class
