@@ -2,6 +2,24 @@
 
 Public Class AnimationGameLevel1
     Private Sub AnimationGameLevel1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+        BackBtn.BackColor = ColorTranslator.FromHtml("#687651")
+        BackBtn.ForeColor = ColorTranslator.FromHtml("#ffffff")
+        MoveToRaftBtn.BackColor = ColorTranslator.FromHtml("#687651")
+        MoveToRaftBtn.ForeColor = ColorTranslator.FromHtml("#ffffff")
+        RemoveBtn.BackColor = ColorTranslator.FromHtml("#687651")
+        RemoveBtn.ForeColor = ColorTranslator.FromHtml("#ffffff")
+        MoveRaftBtn.BackColor = ColorTranslator.FromHtml("#687651")
+        MoveRaftBtn.ForeColor = ColorTranslator.FromHtml("#ffffff")
+        ResetBtn.BackColor = ColorTranslator.FromHtml("#687651")
+        ResetBtn.ForeColor = ColorTranslator.FromHtml("#ffffff")
+
+        ButtonEffects.AddHoverEffect(BackBtn)
+        ButtonEffects.AddHoverEffect(MoveToRaftBtn)
+        ButtonEffects.AddHoverEffect(RemoveBtn)
+        ButtonEffects.AddHoverEffect(MoveRaftBtn)
+        ButtonEffects.AddHoverEffect(ResetBtn)
+
         Priest1.Location = defaultLocationOfPriest1
         Priest2.Location = defaultLocationOfPriest2
         Priest3.Location = defaultLocationOfPriest3
@@ -40,6 +58,11 @@ Public Class AnimationGameLevel1
         raftIsMoving = False
         raftMovingTo = 0
         gameEnded = False
+
+        If selectedCharacter IsNot Nothing Then
+            selectedCharacter.BorderStyle = BorderStyle.None
+        End If
+
         selectedCharacter = Nothing
 
         MoveToRaftBtn.Enabled = True
@@ -85,7 +108,14 @@ Public Class AnimationGameLevel1
     Handles Priest1.Click, Priest2.Click, Priest3.Click,
             Devil1.Click, Devil2.Click, Devil3.Click
 
+        'Remove the previous character's highlight.
+        If selectedCharacter IsNot Nothing Then
+            selectedCharacter.BorderStyle = BorderStyle.None
+        End If
+
+        'Select and highlight the clicked character.
         selectedCharacter = DirectCast(sender, PictureBox)
+        selectedCharacter.BorderStyle = BorderStyle.FixedSingle
 
     End Sub
 
@@ -530,7 +560,7 @@ Public Class AnimationGameLevel1
         If message.StartsWith("You win!") Then
             Dim answer As DialogResult = MessageBox.Show(
         message & vbCrLf & vbCrLf & "Exit game?",
-        "3 Priests and 3 Demons",
+        "3 Steves and 3 Creepers",
         MessageBoxButtons.YesNo)
 
             If answer = DialogResult.Yes Then
@@ -538,7 +568,7 @@ Public Class AnimationGameLevel1
                 Me.Close()
             End If
         Else
-            MessageBox.Show(message, "3 Priests and 3 Demons")
+            MessageBox.Show(message, "3 Steves and 3 Creepers")
         End If
     End Sub
 
@@ -616,14 +646,14 @@ Public Class AnimationGameLevel1
         If BankIsUnsafe(priestsLeft, demonsLeft) OrElse
            BankIsUnsafe(priestsRight, demonsRight) Then
 
-            EndGame("Game over! Demons outnumber the priests on a bank.")
+            EndGame("Game over! Creepers outnumbered Steve on an island.")
             Exit Sub
         End If
 
         If priestsRight = 3 AndAlso demonsRight = 3 AndAlso
            numbersOfCharacterOnTheRaft = 0 Then
 
-            EndGame("You win! All 3 priests and 3 demons crossed safely.")
+            EndGame("You win! All characters crossed safely.")
         End If
     End Sub
 End Class
