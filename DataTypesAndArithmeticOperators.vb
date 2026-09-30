@@ -1,4 +1,6 @@
-﻿Public Class DataTypesAndArithmeticOperators
+﻿Imports System.Reflection.Emit
+
+Public Class DataTypesAndArithmeticOperators
     Private Sub BackBtn_Click(sender As Object, e As EventArgs) Handles BackBtn.Click
         Form1.Show()
         Close()
@@ -38,8 +40,37 @@
 
         BackBtn.BackColor = ColorTranslator.FromHtml("#687651")
         BackBtn.ForeColor = ColorTranslator.FromHtml("#ffffff")
+        Button1.BackColor = ColorTranslator.FromHtml("#687651")
+        Button1.ForeColor = ColorTranslator.FromHtml("#ffffff")
 
         ButtonEffects.AddHoverEffect(BackBtn)
+        ButtonEffects.AddHoverEffect(Button1)
 
     End Sub
+
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        Dim num1 As Integer
+        Dim num2 As Integer
+        num1 = TextBox1.Text
+        num2 = TextBox2.Text
+
+        If RadioButton1.Checked Then
+            Label5.Text = "+"
+            Label4.Text = num1 + num2
+
+        ElseIf RadioButton2.Checked Then
+            Label5.Text = "-"
+            Label4.Text = num1 - num2
+
+        ElseIf RadioButton3.Checked Then
+            Label5.Text = "*"
+            Label4.Text = num1 * num2
+
+        Else
+            Label5.Text = "/"
+            Label4.Text = num1 / num2
+
+        End If
+    End Sub
+
 End Class

@@ -36,6 +36,16 @@ Public Class AnimationGameLevel1
     '---------------------------------------------------
 
     Private Sub ResetBtn_Click(sender As Object, e As EventArgs) Handles ResetBtn.Click
+        Timer1.Stop()
+        raftIsMoving = False
+        raftMovingTo = 0
+        gameEnded = False
+        selectedCharacter = Nothing
+
+        MoveToRaftBtn.Enabled = True
+        RemoveBtn.Enabled = True
+        MoveRaftBtn.Enabled = True
+
         Priest1.Location = defaultLocationOfPriest1
         Priest2.Location = defaultLocationOfPriest2
         Priest3.Location = defaultLocationOfPriest3
@@ -88,10 +98,7 @@ Public Class AnimationGameLevel1
         devil1OnRaft, devil2OnRaft, devil3OnRaft As Boolean
     '---------------------------------------------------
     Private Sub MoveToRaftBtn_Click(sender As Object, e As EventArgs) Handles MoveToRaftBtn.Click
-
-        If raftIsMoving = True Then
-            Exit Sub
-        End If
+        If gameEnded OrElse raftIsMoving Then Exit Sub
 
         If numbersOfCharacterOnTheRaft < 3 Then
             '--------------------------------------------------
@@ -235,6 +242,7 @@ Public Class AnimationGameLevel1
     End Sub
 
     Private Sub RemoveBtn_Click(sender As Object, e As EventArgs) Handles RemoveBtn.Click
+        If gameEnded OrElse raftIsMoving Then Exit Sub
 
         If selectedCharacter Is Priest1 Then
             If priest1OnRaft = True Then
@@ -320,6 +328,8 @@ Public Class AnimationGameLevel1
             End If
         End If
 
+        CheckGame(True)
+
     End Sub
 
     'These are the location C of the characters.
@@ -353,15 +363,31 @@ Public Class AnimationGameLevel1
     Dim raftIsMoving As Boolean = False
     '-------------------------------------------
     Private Sub MoveRaftBtn_Click(sender As Object, e As EventArgs) Handles MoveRaftBtn.Click
+
+        If gameEnded OrElse raftIsMoving Then Exit Sub
+
+        If numbersOfCharacterOnTheRaft = 0 Then
+            Label1.Text = "The raft needs at least one passenger."
+            Exit Sub
+        End If
+
+        'Check the banks without the departing passengers.
+        CheckGame(False)
+
+        If gameEnded Then Exit Sub
+
+        Label1.Text = ""
+
         If Raft.Location = raftPositionA Then
             raftMovingTo = 1
-            raftIsMoving = True
-            Timer1.Start()
         ElseIf Raft.Location = raftPositionC Then
             raftMovingTo = 2
-            raftIsMoving = True
-            Timer1.Start()
+        Else
+            Exit Sub
         End If
+
+        raftIsMoving = True
+        Timer1.Start()
     End Sub
 
     Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
@@ -420,6 +446,7 @@ Public Class AnimationGameLevel1
 
                 raftIsMoving = False
                 Timer1.Stop()
+                CheckGame(True)
             End If
         End If
 
@@ -478,7 +505,125 @@ Public Class AnimationGameLevel1
 
                 raftIsMoving = False
                 Timer1.Stop()
+                CheckGame(True)
             End If
+        End If
+    End Sub
+
+    Private gameEnded As Boolean = False
+
+    Private Function BankIsUnsafe(priests As Integer,
+                                  demons As Integer) As Boolean
+        Return priests > 0 AndAlso demons > priests
+    End Function
+
+    Private Sub EndGame(message As String)
+        gameEnded = True
+        Timer1.Stop()
+        raftIsMoving = False
+
+        MoveToRaftBtn.Enabled = False
+        RemoveBtn.Enabled = False
+        MoveRaftBtn.Enabled = False
+
+        Label1.Text = message
+        If message.StartsWith("You win!") Then
+            Dim answer As DialogResult = MessageBox.Show(
+        message & vbCrLf & vbCrLf & "Exit game?",
+        "3 Priests and 3 Demons",
+        MessageBoxButtons.YesNo)
+
+            If answer = DialogResult.Yes Then
+                Form1.Show()
+                Me.Close()
+            End If
+        Else
+            MessageBox.Show(message, "3 Priests and 3 Demons")
+        End If
+    End Sub
+
+    Private Sub CheckGame(includeRaftPassengers As Boolean)
+        Dim priestsLeft As Integer = 0
+        Dim demonsLeft As Integer = 0
+        Dim priestsRight As Integer = 0
+        Dim demonsRight As Integer = 0
+
+        Dim priests() As PictureBox = {Priest1, Priest2, Priest3}
+        Dim demons() As PictureBox = {Devil1, Devil2, Devil3}
+
+        Dim priestLeftPositions() As Point = {
+            defaultLocationOfPriest1,
+            defaultLocationOfPriest2,
+            defaultLocationOfPriest3
+        }
+
+        Dim priestRightPositions() As Point = {
+            priest1LocationC,
+            priest2LocationC,
+            priest3LocationC
+        }
+
+        Dim demonLeftPositions() As Point = {
+            defaultLocationOfDevil1,
+            defaultLocationOfDevil2,
+            defaultLocationOfDevil3
+        }
+
+        Dim demonRightPositions() As Point = {
+            devil1LocationC,
+            devil2LocationC,
+            devil3LocationC
+        }
+
+        Dim priestsOnRaft() As Boolean = {
+            priest1OnRaft, priest2OnRaft, priest3OnRaft
+        }
+
+        Dim demonsOnRaft() As Boolean = {
+            devil1OnRaft, devil2OnRaft, devil3OnRaft
+        }
+
+        For i As Integer = 0 To 2
+            If Not priestsOnRaft(i) Then
+                If priests(i).Location = priestLeftPositions(i) Then
+                    priestsLeft += 1
+                ElseIf priests(i).Location = priestRightPositions(i) Then
+                    priestsRight += 1
+                End If
+            ElseIf includeRaftPassengers Then
+                If Raft.Location = raftPositionA Then
+                    priestsLeft += 1
+                ElseIf Raft.Location = raftPositionC Then
+                    priestsRight += 1
+                End If
+            End If
+
+            If Not demonsOnRaft(i) Then
+                If demons(i).Location = demonLeftPositions(i) Then
+                    demonsLeft += 1
+                ElseIf demons(i).Location = demonRightPositions(i) Then
+                    demonsRight += 1
+                End If
+            ElseIf includeRaftPassengers Then
+                If Raft.Location = raftPositionA Then
+                    demonsLeft += 1
+                ElseIf Raft.Location = raftPositionC Then
+                    demonsRight += 1
+                End If
+            End If
+        Next
+
+        If BankIsUnsafe(priestsLeft, demonsLeft) OrElse
+           BankIsUnsafe(priestsRight, demonsRight) Then
+
+            EndGame("Game over! Demons outnumber the priests on a bank.")
+            Exit Sub
+        End If
+
+        If priestsRight = 3 AndAlso demonsRight = 3 AndAlso
+           numbersOfCharacterOnTheRaft = 0 Then
+
+            EndGame("You win! All 3 priests and 3 demons crossed safely.")
         End If
     End Sub
 End Class

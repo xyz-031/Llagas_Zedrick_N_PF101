@@ -1,17 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <root>
-  <!-- 
-    Microsoft ResX Schema 
-    
+  <!--
+    Microsoft ResX Schema
+
     Version 2.0
-    
-    The primary goals of this format is to allow a simple XML format 
-    that is mostly human readable. The generation and parsing of the 
-    various data types are done through the TypeConverter classes 
+
+    The primary goals of this format is to allow a simple XML format
+    that is mostly human readable. The generation and parsing of the
+    various data types are done through the TypeConverter classes
     associated with the data types.
-    
+
     Example:
-    
+
     ... ado.net/XML headers & schema ...
     <resheader name="resmimetype">text/microsoft-resx</resheader>
     <resheader name="version">2.0</resheader>
@@ -26,36 +26,36 @@
         <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
         <comment>This is a comment</comment>
     </data>
-                
-    There are any number of "resheader" rows that contain simple 
+
+    There are any number of "resheader" rows that contain simple
     name/value pairs.
-    
-    Each data row contains a name, and value. The row also contains a 
-    type or mimetype. Type corresponds to a .NET class that support 
-    text/value conversion through the TypeConverter architecture. 
-    Classes that don't support this are serialized and stored with the 
+
+    Each data row contains a name, and value. The row also contains a
+    type or mimetype. Type corresponds to a .NET class that support
+    text/value conversion through the TypeConverter architecture.
+    Classes that don't support this are serialized and stored with the
     mimetype set.
-    
-    The mimetype is used for serialized objects, and tells the 
-    ResXResourceReader how to depersist the object. This is currently not 
+
+    The mimetype is used for serialized objects, and tells the
+    ResXResourceReader how to depersist the object. This is currently not
     extensible. For a given mimetype the value must be set accordingly:
-    
-    Note - application/x-microsoft.net.object.binary.base64 is the format 
-    that the ResXResourceWriter will generate, however the reader can 
+
+    Note - application/x-microsoft.net.object.binary.base64 is the format
+    that the ResXResourceWriter will generate, however the reader can
     read any of the formats listed below.
-    
+
     mimetype: application/x-microsoft.net.object.binary.base64
-    value   : The object must be serialized with 
+    value   : The object must be serialized with
             : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
             : and then encoded with base64 encoding.
-    
+
     mimetype: application/x-microsoft.net.object.soap.base64
-    value   : The object must be serialized with 
+    value   : The object must be serialized with
             : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
             : and then encoded with base64 encoding.
 
     mimetype: application/x-microsoft.net.object.bytearray.base64
-    value   : The object must be serialized into a byte array 
+    value   : The object must be serialized into a byte array
             : using a System.ComponentModel.TypeConverter
             : and then encoded with base64 encoding.
     -->
@@ -117,20 +117,59 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="AnimatedHomescreenBackground1280x720" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\AnimatedHomescreenBackground1280x720.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ErrorOutputCommand" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ErrorOutputCommand1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="icons8-exit-64" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icons8-exit-64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="icons8-exit-641" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icons8-exit-64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="RichTextBox1.Text" xml:space="preserve">
+    <value>Arrays are like groups of variables that allow you to store sets of similar data.
+
+- A single dimension array is useful for storing and working with a single set of data.
+- A multidimensional array can be used to store and work with multiple sets of data.
+
+Array programming techniques covered:
+	- Summing and averaging all the elements in an array
+	- Summing all the columns in a two dimensional array
+	- Searching an array for a specific value
+	- Using parallel arrays
+
+Characteristics of an Array:
+	- An array stores multiple values of same type. Like a group of variables with a single name.
+		For example, the days of the week might be:
+			- A set of 7 string variables
+			- With a maximum length of 9 characters
+	- All variables within an array are called elements and must be of the same data type.
+	- You access the elements in an array through a subscript.
+
+Declaring an Array:
+Declaring an array is much like a regular variable.
+
+Dim ArrayName (UpperSubscript) As DataType
+
+	- ArrayName is the name of the array.
+	- UpperSubscript is the value of the array's highest subscript:
+		- Must be a positive Integer.
+		- Positive Integer named constant.
+		- Integer variable containing a positive number.
+	- DataType is a Visual Basic data type.
+
+
+- An Array is a list of values – all values in an array are referenced by using the same name.  
+- An array is like a ListBox without the box where the list of values are all stored in memory.  
+- Arrays are also called tables.
+- Arrays are based on the System.Array object – a type of collection object.  Arrays can store almost any type of data such as integer, string, decimal, etc.
+- Element – this is the term used to refer to an individual part of an array.  
+- Each element is numbered beginning with the number zero.  Example, 0, 1, 2, 3, etc.
+- The number referring to an array elementis placed inside parentheses and is called a subscript or index.  This is the general format for an array reference.
+
+One Dimension Array
+- Useful for storing and working with a single set of data.
+
+Two-Dimensional Array
+- Used to hold multiple sets of values.
+- It has rows and columns.
+- Declared using: Dim ArrayName (UpperRow, UpperColumn) As DataType
+
+Three-Dimensional Arrays and Beyond
+- You can create arrays with up to 32 dimensions.
+- Each dimensions can be considered as a page in a book.
+- Can be declared as: Dim ArrayName (UpperRow, UpperColumn, Pages) As DataType
+- This array is difficult to visualize.</value>
   </data>
 </root>

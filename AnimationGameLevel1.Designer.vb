@@ -134,6 +134,7 @@ Partial Class AnimationGameLevel1
         ' Devil3
         ' 
         Devil3.BackColor = Color.Red
+        Devil3.Image = My.Resources.Resources.icons8_exit_641
         Devil3.Location = New Point(927, 361)
         Devil3.Name = "Devil3"
         Devil3.Size = New Size(37, 36)
@@ -170,7 +171,7 @@ Partial Class AnimationGameLevel1
         ' Label1
         ' 
         Label1.AutoSize = True
-        Label1.Location = New Point(604, 557)
+        Label1.Location = New Point(440, 557)
         Label1.Name = "Label1"
         Label1.Size = New Size(53, 20)
         Label1.TabIndex = 13

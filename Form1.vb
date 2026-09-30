@@ -163,4 +163,24 @@ Public Class Form1
         LoopingStatements.Show()
         Me.Hide()
     End Sub
+
+    Private Sub ALaboratoryExerciseToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ALaboratoryExerciseToolStripMenuItem.Click
+        LaboratoryExercise.Show()
+        Me.Hide()
+    End Sub
+
+    Private Sub BVisualBasicArrayToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles BVisualBasicArrayToolStripMenuItem.Click
+        VisualBasicArray.Show()
+        Me.Hide()
+    End Sub
+
+    Private Sub AToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles AToolStripMenuItem1.Click
+        DialogBoxes.Show()
+        Me.Hide()
+    End Sub
+
+    Private Sub BLaboratoryActivityToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles BLaboratoryActivityToolStripMenuItem.Click
+        Week8LaboratoryActivity.Show()
+        Me.Hide()
+    End Sub
 End Class

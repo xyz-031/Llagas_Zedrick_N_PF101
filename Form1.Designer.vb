@@ -52,8 +52,12 @@ Partial Class Form1
         CBooleanExpressionsToolStripMenuItem = New ToolStripMenuItem()
         DUsingRelationalOperatorsWithMathOperatorsToolStripMenuItem = New ToolStripMenuItem()
         ELogicalOperatorsToolStripMenuItem = New ToolStripMenuItem()
+        FLoopingStatementToolStripMenuItem = New ToolStripMenuItem()
         ArraysToolStripMenuItem = New ToolStripMenuItem()
+        ALaboratoryExerciseToolStripMenuItem = New ToolStripMenuItem()
+        BVisualBasicArrayToolStripMenuItem = New ToolStripMenuItem()
         WorkingWithControlsAndPropertiesToolStripMenuItem = New ToolStripMenuItem()
+        AToolStripMenuItem1 = New ToolStripMenuItem()
         MidtermExaminationToolStripMenuItem = New ToolStripMenuItem()
         DebuggingAndTracingToolStripMenuItem = New ToolStripMenuItem()
         WorkingWithNETFrameworkAndMDIToolStripMenuItem = New ToolStripMenuItem()
@@ -67,7 +71,7 @@ Partial Class Form1
         SBIT2EToolStripMenuItem = New ToolStripMenuItem()
         ExitToolStripMenuItem = New ToolStripMenuItem()
         PictureBox1 = New PictureBox()
-        FLoopingStatementToolStripMenuItem = New ToolStripMenuItem()
+        BLaboratoryActivityToolStripMenuItem = New ToolStripMenuItem()
         MenuStrip1.SuspendLayout()
         CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
@@ -269,19 +273,45 @@ Partial Class Form1
         ELogicalOperatorsToolStripMenuItem.Size = New Size(500, 30)
         ELogicalOperatorsToolStripMenuItem.Text = "E. Logical Operators"
         ' 
+        ' FLoopingStatementToolStripMenuItem
+        ' 
+        FLoopingStatementToolStripMenuItem.Name = "FLoopingStatementToolStripMenuItem"
+        FLoopingStatementToolStripMenuItem.Size = New Size(500, 30)
+        FLoopingStatementToolStripMenuItem.Text = "F. Looping Statement"
+        ' 
         ' ArraysToolStripMenuItem
         ' 
         ArraysToolStripMenuItem.BackColor = Color.OldLace
+        ArraysToolStripMenuItem.DropDownItems.AddRange(New ToolStripItem() {BVisualBasicArrayToolStripMenuItem, ALaboratoryExerciseToolStripMenuItem})
         ArraysToolStripMenuItem.Name = "ArraysToolStripMenuItem"
         ArraysToolStripMenuItem.Size = New Size(490, 30)
         ArraysToolStripMenuItem.Text = "7. Arrays"
         ' 
+        ' ALaboratoryExerciseToolStripMenuItem
+        ' 
+        ALaboratoryExerciseToolStripMenuItem.Name = "ALaboratoryExerciseToolStripMenuItem"
+        ALaboratoryExerciseToolStripMenuItem.Size = New Size(266, 30)
+        ALaboratoryExerciseToolStripMenuItem.Text = "B. Laboratory Activity"
+        ' 
+        ' BVisualBasicArrayToolStripMenuItem
+        ' 
+        BVisualBasicArrayToolStripMenuItem.Name = "BVisualBasicArrayToolStripMenuItem"
+        BVisualBasicArrayToolStripMenuItem.Size = New Size(266, 30)
+        BVisualBasicArrayToolStripMenuItem.Text = "A. Visual Basic Array"
+        ' 
         ' WorkingWithControlsAndPropertiesToolStripMenuItem
         ' 
         WorkingWithControlsAndPropertiesToolStripMenuItem.BackColor = Color.OldLace
+        WorkingWithControlsAndPropertiesToolStripMenuItem.DropDownItems.AddRange(New ToolStripItem() {AToolStripMenuItem1, BLaboratoryActivityToolStripMenuItem})
         WorkingWithControlsAndPropertiesToolStripMenuItem.Name = "WorkingWithControlsAndPropertiesToolStripMenuItem"
         WorkingWithControlsAndPropertiesToolStripMenuItem.Size = New Size(490, 30)
         WorkingWithControlsAndPropertiesToolStripMenuItem.Text = "8. Working with Controls and Properties"
+        ' 
+        ' AToolStripMenuItem1
+        ' 
+        AToolStripMenuItem1.Name = "AToolStripMenuItem1"
+        AToolStripMenuItem1.Size = New Size(266, 30)
+        AToolStripMenuItem1.Text = "A. Dialog Boxes"
         ' 
         ' MidtermExaminationToolStripMenuItem
         ' 
@@ -379,11 +409,11 @@ Partial Class Form1
         PictureBox1.TabIndex = 1
         PictureBox1.TabStop = False
         ' 
-        ' FLoopingStatementToolStripMenuItem
+        ' BLaboratoryActivityToolStripMenuItem
         ' 
-        FLoopingStatementToolStripMenuItem.Name = "FLoopingStatementToolStripMenuItem"
-        FLoopingStatementToolStripMenuItem.Size = New Size(500, 30)
-        FLoopingStatementToolStripMenuItem.Text = "F. Looping Statement"
+        BLaboratoryActivityToolStripMenuItem.Name = "BLaboratoryActivityToolStripMenuItem"
+        BLaboratoryActivityToolStripMenuItem.Size = New Size(266, 30)
+        BLaboratoryActivityToolStripMenuItem.Text = "B. Laboratory Activity"
         ' 
         ' Form1
         ' 
@@ -454,5 +484,9 @@ Partial Class Form1
     Friend WithEvents DUsingRelationalOperatorsWithMathOperatorsToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ELogicalOperatorsToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents FLoopingStatementToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents ALaboratoryExerciseToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents BVisualBasicArrayToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents AToolStripMenuItem1 As ToolStripMenuItem
+    Friend WithEvents BLaboratoryActivityToolStripMenuItem As ToolStripMenuItem
 
 End Class
