@@ -183,7 +183,7 @@ Partial Class AnimationGameLevel1
         ' 
         Label1.BackColor = Color.Transparent
         Label1.FlatStyle = FlatStyle.Flat
-        Label1.Font = New Font("Century Gothic", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label1.Font = New Font("Arial", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label1.ForeColor = Color.White
         Label1.Location = New Point(1, 540)
         Label1.Name = "Label1"

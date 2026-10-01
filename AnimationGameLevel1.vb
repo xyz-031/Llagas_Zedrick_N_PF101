@@ -656,4 +656,5 @@ Public Class AnimationGameLevel1
             EndGame("You win! All characters crossed safely.")
         End If
     End Sub
+
 End Class
