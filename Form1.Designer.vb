@@ -68,11 +68,11 @@ Partial Class Form1
         FinalExaminationToolStripMenuItem = New ToolStripMenuItem()
         AnimationToolStripMenuItem = New ToolStripMenuItem()
         GameLevel1ToolStripMenuItem = New ToolStripMenuItem()
+        GameLevel2ToolStripMenuItem = New ToolStripMenuItem()
         DataDToolStripMenuItem = New ToolStripMenuItem()
         SBIT2EToolStripMenuItem = New ToolStripMenuItem()
         ExitToolStripMenuItem = New ToolStripMenuItem()
         PictureBox1 = New PictureBox()
-        GameLevel2ToolStripMenuItem = New ToolStripMenuItem()
         MenuStrip1.SuspendLayout()
         CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
@@ -95,7 +95,7 @@ Partial Class Form1
         ' LessonsToolStripMenuItem
         ' 
         LessonsToolStripMenuItem.DropDownItems.AddRange(New ToolStripItem() {ClassOrientationToolStripMenuItem, IntroductionToOOPToolStripMenuItem, GettingStartedWithToolStripMenuItem, PlanningApplicationsAndDesigningInterfacesToolStripMenuItem, DataHandlingToolStripMenuItem, CodingWithVariableNameConstantsAndCalculcationsToolStripMenuItem, ArraysToolStripMenuItem, WorkingWithControlsAndPropertiesToolStripMenuItem, MidtermExaminationToolStripMenuItem, DebuggingAndTracingToolStripMenuItem, WorkingWithNETFrameworkAndMDIToolStripMenuItem, DatabaseConnectionToolStripMenuItem, DevelopingDataDrivenApplicationToolStripMenuItem, PresentationToolStripMenuItem, FinalExaminationToolStripMenuItem, AnimationToolStripMenuItem, DataDToolStripMenuItem})
-        LessonsToolStripMenuItem.Image = CType(resources.GetObject("LessonsToolStripMenuItem.Image"), Image)
+        LessonsToolStripMenuItem.Image = My.Resources.Resources.icons8_file_128
         LessonsToolStripMenuItem.Name = "LessonsToolStripMenuItem"
         LessonsToolStripMenuItem.Padding = New Padding(10, 0, 10, 0)
         LessonsToolStripMenuItem.Size = New Size(118, 29)
@@ -383,6 +383,12 @@ Partial Class Form1
         GameLevel1ToolStripMenuItem.Size = New Size(224, 30)
         GameLevel1ToolStripMenuItem.Text = "Game: Level 1"
         ' 
+        ' GameLevel2ToolStripMenuItem
+        ' 
+        GameLevel2ToolStripMenuItem.Name = "GameLevel2ToolStripMenuItem"
+        GameLevel2ToolStripMenuItem.Size = New Size(224, 30)
+        GameLevel2ToolStripMenuItem.Text = "Game: Level 2"
+        ' 
         ' DataDToolStripMenuItem
         ' 
         DataDToolStripMenuItem.BackColor = Color.OldLace
@@ -392,7 +398,7 @@ Partial Class Form1
         ' 
         ' SBIT2EToolStripMenuItem
         ' 
-        SBIT2EToolStripMenuItem.Image = CType(resources.GetObject("SBIT2EToolStripMenuItem.Image"), Image)
+        SBIT2EToolStripMenuItem.Image = My.Resources.Resources.icons8_person_90
         SBIT2EToolStripMenuItem.Name = "SBIT2EToolStripMenuItem"
         SBIT2EToolStripMenuItem.Padding = New Padding(10, 0, 10, 0)
         SBIT2EToolStripMenuItem.Size = New Size(116, 29)
@@ -400,7 +406,7 @@ Partial Class Form1
         ' 
         ' ExitToolStripMenuItem
         ' 
-        ExitToolStripMenuItem.Image = CType(resources.GetObject("ExitToolStripMenuItem.Image"), Image)
+        ExitToolStripMenuItem.Image = My.Resources.Resources.icons8_exit_64
         ExitToolStripMenuItem.Name = "ExitToolStripMenuItem"
         ExitToolStripMenuItem.Padding = New Padding(10, 0, 10, 0)
         ExitToolStripMenuItem.Size = New Size(83, 29)
@@ -415,12 +421,6 @@ Partial Class Form1
         PictureBox1.SizeMode = PictureBoxSizeMode.StretchImage
         PictureBox1.TabIndex = 1
         PictureBox1.TabStop = False
-        ' 
-        ' GameLevel2ToolStripMenuItem
-        ' 
-        GameLevel2ToolStripMenuItem.Name = "GameLevel2ToolStripMenuItem"
-        GameLevel2ToolStripMenuItem.Size = New Size(224, 30)
-        GameLevel2ToolStripMenuItem.Text = "Game: Level 2"
         ' 
         ' Form1
         ' 

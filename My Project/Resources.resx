@@ -121,14 +121,23 @@
   <data name="basket" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\basket.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="icons8-person-90" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons8-person-90.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="StartPage" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\StartPage.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="BG4" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\BG4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MenuToolBar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MenuToolBar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="BG2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\BG2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Level2Background1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Level2Background1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="BG12" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BG12.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="BG1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\BG1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -138,6 +147,9 @@
   </data>
   <data name="2026-09-30_13.07.28" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\2026-09-30_13.07.28.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="FormDesignerWindow" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FormDesignerWindow.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Creeper" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Creeper.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -166,17 +178,35 @@
   <data name="2026-09-30_12.53.58" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\2026-09-30_12.53.58.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Level2Background1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Level2Background1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="WholeIDE" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\WholeIDE.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PropertiesWIndow" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PropertiesWIndow.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="BG9" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\BG9.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Level2Background2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Level2Background2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="ToolboxWindow" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ToolboxWindow.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="ErrorOutputCommand" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ErrorOutputCommand1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ErrorOutputCommand1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ErrorOutputCommand1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="BG11" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\BG11.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GameLevel1HomescreenBG" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GameLevel1HomescreenBG.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="badItem" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\badItem.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -184,8 +214,8 @@
   <data name="BG6" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\BG6.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="BG12" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\BG12.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="SolutionExplorerWindow" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SolutionExplorerWindow.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="2026-09-30_12.53.58copy" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\2026-09-30_12.53.58copy.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -205,7 +235,7 @@
   <data name="BG3" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\BG3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="GameLevel1HomescreenBG" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\GameLevel1HomescreenBG.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="icons8-file-128" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons8-file-128.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

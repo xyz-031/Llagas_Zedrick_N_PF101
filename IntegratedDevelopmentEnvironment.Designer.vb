@@ -95,7 +95,7 @@ Partial Class IntegratedDevelopmentEnvironment
         ' 
         ' PictureBox1
         ' 
-        PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), Image)
+        PictureBox1.Image = My.Resources.Resources.ErrorOutputCommand1
         PictureBox1.Location = New Point(12, 3)
         PictureBox1.Name = "PictureBox1"
         PictureBox1.Size = New Size(1215, 141)
@@ -158,7 +158,7 @@ Partial Class IntegratedDevelopmentEnvironment
         ' 
         ' PictureBox2
         ' 
-        PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), Image)
+        PictureBox2.Image = My.Resources.Resources.FormDesignerWindow
         PictureBox2.Location = New Point(12, 13)
         PictureBox2.Name = "PictureBox2"
         PictureBox2.Size = New Size(1215, 326)
@@ -190,7 +190,7 @@ Partial Class IntegratedDevelopmentEnvironment
         ' PictureBox3
         ' 
         PictureBox3.BackColor = Color.FromArgb(CByte(64), CByte(64), CByte(64))
-        PictureBox3.Image = CType(resources.GetObject("PictureBox3.Image"), Image)
+        PictureBox3.Image = My.Resources.Resources.PropertiesWIndow
         PictureBox3.Location = New Point(12, 13)
         PictureBox3.Name = "PictureBox3"
         PictureBox3.Size = New Size(300, 837)
@@ -222,7 +222,7 @@ Partial Class IntegratedDevelopmentEnvironment
         ' PictureBox4
         ' 
         PictureBox4.BackColor = Color.FromArgb(CByte(64), CByte(64), CByte(64))
-        PictureBox4.Image = CType(resources.GetObject("PictureBox4.Image"), Image)
+        PictureBox4.Image = My.Resources.Resources.SolutionExplorerWindow
         PictureBox4.Location = New Point(12, 13)
         PictureBox4.Name = "PictureBox4"
         PictureBox4.Size = New Size(300, 561)
@@ -242,7 +242,7 @@ Partial Class IntegratedDevelopmentEnvironment
         ' 
         ' PictureBox5
         ' 
-        PictureBox5.Image = CType(resources.GetObject("PictureBox5.Image"), Image)
+        PictureBox5.Image = My.Resources.Resources.ToolboxWindow
         PictureBox5.Location = New Point(12, 13)
         PictureBox5.Name = "PictureBox5"
         PictureBox5.Size = New Size(300, 561)
@@ -285,7 +285,7 @@ Partial Class IntegratedDevelopmentEnvironment
         ' PictureBox6
         ' 
         PictureBox6.BackColor = Color.Black
-        PictureBox6.Image = CType(resources.GetObject("PictureBox6.Image"), Image)
+        PictureBox6.Image = My.Resources.Resources.MenuToolBar
         PictureBox6.Location = New Point(12, 13)
         PictureBox6.Name = "PictureBox6"
         PictureBox6.Size = New Size(1215, 84)
@@ -315,7 +315,7 @@ Partial Class IntegratedDevelopmentEnvironment
         ' 
         ' PictureBox7
         ' 
-        PictureBox7.Image = CType(resources.GetObject("PictureBox7.Image"), Image)
+        PictureBox7.Image = My.Resources.Resources.WholeIDE
         PictureBox7.Location = New Point(131, 47)
         PictureBox7.Name = "PictureBox7"
         PictureBox7.Size = New Size(981, 522)
@@ -345,7 +345,7 @@ Partial Class IntegratedDevelopmentEnvironment
         ' 
         ' PictureBox8
         ' 
-        PictureBox8.Image = CType(resources.GetObject("PictureBox8.Image"), Image)
+        PictureBox8.Image = My.Resources.Resources.StartPage
         PictureBox8.Location = New Point(146, 47)
         PictureBox8.Name = "PictureBox8"
         PictureBox8.Size = New Size(966, 516)
