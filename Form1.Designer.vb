@@ -54,10 +54,11 @@ Partial Class Form1
         ELogicalOperatorsToolStripMenuItem = New ToolStripMenuItem()
         FLoopingStatementToolStripMenuItem = New ToolStripMenuItem()
         ArraysToolStripMenuItem = New ToolStripMenuItem()
-        ALaboratoryExerciseToolStripMenuItem = New ToolStripMenuItem()
         BVisualBasicArrayToolStripMenuItem = New ToolStripMenuItem()
+        ALaboratoryExerciseToolStripMenuItem = New ToolStripMenuItem()
         WorkingWithControlsAndPropertiesToolStripMenuItem = New ToolStripMenuItem()
         AToolStripMenuItem1 = New ToolStripMenuItem()
+        BLaboratoryActivityToolStripMenuItem = New ToolStripMenuItem()
         MidtermExaminationToolStripMenuItem = New ToolStripMenuItem()
         DebuggingAndTracingToolStripMenuItem = New ToolStripMenuItem()
         WorkingWithNETFrameworkAndMDIToolStripMenuItem = New ToolStripMenuItem()
@@ -71,7 +72,7 @@ Partial Class Form1
         SBIT2EToolStripMenuItem = New ToolStripMenuItem()
         ExitToolStripMenuItem = New ToolStripMenuItem()
         PictureBox1 = New PictureBox()
-        BLaboratoryActivityToolStripMenuItem = New ToolStripMenuItem()
+        GameLevel2ToolStripMenuItem = New ToolStripMenuItem()
         MenuStrip1.SuspendLayout()
         CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
@@ -287,17 +288,17 @@ Partial Class Form1
         ArraysToolStripMenuItem.Size = New Size(490, 30)
         ArraysToolStripMenuItem.Text = "7. Arrays"
         ' 
-        ' ALaboratoryExerciseToolStripMenuItem
-        ' 
-        ALaboratoryExerciseToolStripMenuItem.Name = "ALaboratoryExerciseToolStripMenuItem"
-        ALaboratoryExerciseToolStripMenuItem.Size = New Size(266, 30)
-        ALaboratoryExerciseToolStripMenuItem.Text = "B. Laboratory Activity"
-        ' 
         ' BVisualBasicArrayToolStripMenuItem
         ' 
         BVisualBasicArrayToolStripMenuItem.Name = "BVisualBasicArrayToolStripMenuItem"
         BVisualBasicArrayToolStripMenuItem.Size = New Size(266, 30)
         BVisualBasicArrayToolStripMenuItem.Text = "A. Visual Basic Array"
+        ' 
+        ' ALaboratoryExerciseToolStripMenuItem
+        ' 
+        ALaboratoryExerciseToolStripMenuItem.Name = "ALaboratoryExerciseToolStripMenuItem"
+        ALaboratoryExerciseToolStripMenuItem.Size = New Size(266, 30)
+        ALaboratoryExerciseToolStripMenuItem.Text = "B. Laboratory Activity"
         ' 
         ' WorkingWithControlsAndPropertiesToolStripMenuItem
         ' 
@@ -312,6 +313,12 @@ Partial Class Form1
         AToolStripMenuItem1.Name = "AToolStripMenuItem1"
         AToolStripMenuItem1.Size = New Size(266, 30)
         AToolStripMenuItem1.Text = "A. Dialog Boxes"
+        ' 
+        ' BLaboratoryActivityToolStripMenuItem
+        ' 
+        BLaboratoryActivityToolStripMenuItem.Name = "BLaboratoryActivityToolStripMenuItem"
+        BLaboratoryActivityToolStripMenuItem.Size = New Size(266, 30)
+        BLaboratoryActivityToolStripMenuItem.Text = "B. Laboratory Activity"
         ' 
         ' MidtermExaminationToolStripMenuItem
         ' 
@@ -365,7 +372,7 @@ Partial Class Form1
         ' AnimationToolStripMenuItem
         ' 
         AnimationToolStripMenuItem.BackColor = Color.OldLace
-        AnimationToolStripMenuItem.DropDownItems.AddRange(New ToolStripItem() {GameLevel1ToolStripMenuItem})
+        AnimationToolStripMenuItem.DropDownItems.AddRange(New ToolStripItem() {GameLevel1ToolStripMenuItem, GameLevel2ToolStripMenuItem})
         AnimationToolStripMenuItem.Name = "AnimationToolStripMenuItem"
         AnimationToolStripMenuItem.Size = New Size(490, 30)
         AnimationToolStripMenuItem.Text = "17. Animation"
@@ -373,7 +380,7 @@ Partial Class Form1
         ' GameLevel1ToolStripMenuItem
         ' 
         GameLevel1ToolStripMenuItem.Name = "GameLevel1ToolStripMenuItem"
-        GameLevel1ToolStripMenuItem.Size = New Size(207, 30)
+        GameLevel1ToolStripMenuItem.Size = New Size(224, 30)
         GameLevel1ToolStripMenuItem.Text = "Game: Level 1"
         ' 
         ' DataDToolStripMenuItem
@@ -409,11 +416,11 @@ Partial Class Form1
         PictureBox1.TabIndex = 1
         PictureBox1.TabStop = False
         ' 
-        ' BLaboratoryActivityToolStripMenuItem
+        ' GameLevel2ToolStripMenuItem
         ' 
-        BLaboratoryActivityToolStripMenuItem.Name = "BLaboratoryActivityToolStripMenuItem"
-        BLaboratoryActivityToolStripMenuItem.Size = New Size(266, 30)
-        BLaboratoryActivityToolStripMenuItem.Text = "B. Laboratory Activity"
+        GameLevel2ToolStripMenuItem.Name = "GameLevel2ToolStripMenuItem"
+        GameLevel2ToolStripMenuItem.Size = New Size(224, 30)
+        GameLevel2ToolStripMenuItem.Text = "Game: Level 2"
         ' 
         ' Form1
         ' 
@@ -488,5 +495,6 @@ Partial Class Form1
     Friend WithEvents BVisualBasicArrayToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents AToolStripMenuItem1 As ToolStripMenuItem
     Friend WithEvents BLaboratoryActivityToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents GameLevel2ToolStripMenuItem As ToolStripMenuItem
 
 End Class

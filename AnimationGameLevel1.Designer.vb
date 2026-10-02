@@ -56,7 +56,7 @@ Partial Class AnimationGameLevel1
         BackBtn.Font = New Font("Segoe UI Semibold", 9F, FontStyle.Bold)
         BackBtn.Location = New Point(12, 12)
         BackBtn.Name = "BackBtn"
-        BackBtn.Size = New Size(135, 32)
+        BackBtn.Size = New Size(130, 44)
         BackBtn.TabIndex = 0
         BackBtn.Text = "Back"
         BackBtn.UseVisualStyleBackColor = True

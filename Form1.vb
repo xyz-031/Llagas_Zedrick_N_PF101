@@ -65,7 +65,7 @@ Public Class Form1
     End Sub
 
     Private Sub GameLevel1ToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles GameLevel1ToolStripMenuItem.Click
-        AnimationGameLevel1.Show()
+        GameLevel1Homescreen.Show()
         Me.Hide()
     End Sub
 
@@ -181,6 +181,11 @@ Public Class Form1
 
     Private Sub BLaboratoryActivityToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles BLaboratoryActivityToolStripMenuItem.Click
         Week8LaboratoryActivity.Show()
+        Me.Hide()
+    End Sub
+
+    Private Sub GameLevel2ToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles GameLevel2ToolStripMenuItem.Click
+        GameLevel2Homescreen.Show()
         Me.Hide()
     End Sub
 End Class

@@ -560,7 +560,7 @@ Public Class AnimationGameLevel1
         If message.StartsWith("You win!") Then
             Dim answer As DialogResult = MessageBox.Show(
         message & vbCrLf & vbCrLf & "Exit game?",
-        "3 Steves and 3 Creepers",
+        "Three Creepers, Three Steves",
         MessageBoxButtons.YesNo)
 
             If answer = DialogResult.Yes Then
@@ -568,7 +568,7 @@ Public Class AnimationGameLevel1
                 Me.Close()
             End If
         Else
-            MessageBox.Show(message, "3 Steves and 3 Creepers")
+            MessageBox.Show(message, "Three Creepers, Three Steves")
         End If
     End Sub
 
@@ -653,7 +653,7 @@ Public Class AnimationGameLevel1
         If priestsRight = 3 AndAlso demonsRight = 3 AndAlso
            numbersOfCharacterOnTheRaft = 0 Then
 
-            EndGame("You win! All characters crossed safely.")
+            EndGame("You win! All of them crossed safely.")
         End If
     End Sub
 
