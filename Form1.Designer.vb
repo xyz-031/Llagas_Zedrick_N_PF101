@@ -22,7 +22,6 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
         MenuStrip1 = New MenuStrip()
         LessonsToolStripMenuItem = New ToolStripMenuItem()
         ClassOrientationToolStripMenuItem = New ToolStripMenuItem()
@@ -61,6 +60,10 @@ Partial Class Form1
         BLaboratoryActivityToolStripMenuItem = New ToolStripMenuItem()
         MidtermExaminationToolStripMenuItem = New ToolStripMenuItem()
         DebuggingAndTracingToolStripMenuItem = New ToolStripMenuItem()
+        AAbstractClassToolStripMenuItem = New ToolStripMenuItem()
+        BFindingAndCorrectingErrorsToolStripMenuItem = New ToolStripMenuItem()
+        CErrorHandlingToolStripMenuItem = New ToolStripMenuItem()
+        DDebuggingToolStripMenuItem = New ToolStripMenuItem()
         WorkingWithNETFrameworkAndMDIToolStripMenuItem = New ToolStripMenuItem()
         DatabaseConnectionToolStripMenuItem = New ToolStripMenuItem()
         DevelopingDataDrivenApplicationToolStripMenuItem = New ToolStripMenuItem()
@@ -330,9 +333,34 @@ Partial Class Form1
         ' DebuggingAndTracingToolStripMenuItem
         ' 
         DebuggingAndTracingToolStripMenuItem.BackColor = Color.OldLace
+        DebuggingAndTracingToolStripMenuItem.DropDownItems.AddRange(New ToolStripItem() {AAbstractClassToolStripMenuItem, BFindingAndCorrectingErrorsToolStripMenuItem, CErrorHandlingToolStripMenuItem, DDebuggingToolStripMenuItem})
         DebuggingAndTracingToolStripMenuItem.Name = "DebuggingAndTracingToolStripMenuItem"
         DebuggingAndTracingToolStripMenuItem.Size = New Size(490, 30)
         DebuggingAndTracingToolStripMenuItem.Text = "10. Debugging and Tracing"
+        ' 
+        ' AAbstractClassToolStripMenuItem
+        ' 
+        AAbstractClassToolStripMenuItem.Name = "AAbstractClassToolStripMenuItem"
+        AAbstractClassToolStripMenuItem.Size = New Size(349, 30)
+        AAbstractClassToolStripMenuItem.Text = "A. Abstract Class"
+        ' 
+        ' BFindingAndCorrectingErrorsToolStripMenuItem
+        ' 
+        BFindingAndCorrectingErrorsToolStripMenuItem.Name = "BFindingAndCorrectingErrorsToolStripMenuItem"
+        BFindingAndCorrectingErrorsToolStripMenuItem.Size = New Size(349, 30)
+        BFindingAndCorrectingErrorsToolStripMenuItem.Text = "B. Finding and Correcting Errors"
+        ' 
+        ' CErrorHandlingToolStripMenuItem
+        ' 
+        CErrorHandlingToolStripMenuItem.Name = "CErrorHandlingToolStripMenuItem"
+        CErrorHandlingToolStripMenuItem.Size = New Size(349, 30)
+        CErrorHandlingToolStripMenuItem.Text = "C. Error Handling"
+        ' 
+        ' DDebuggingToolStripMenuItem
+        ' 
+        DDebuggingToolStripMenuItem.Name = "DDebuggingToolStripMenuItem"
+        DDebuggingToolStripMenuItem.Size = New Size(349, 30)
+        DDebuggingToolStripMenuItem.Text = "D. Debugging Mode"
         ' 
         ' WorkingWithNETFrameworkAndMDIToolStripMenuItem
         ' 
@@ -380,13 +408,13 @@ Partial Class Form1
         ' GameLevel1ToolStripMenuItem
         ' 
         GameLevel1ToolStripMenuItem.Name = "GameLevel1ToolStripMenuItem"
-        GameLevel1ToolStripMenuItem.Size = New Size(224, 30)
+        GameLevel1ToolStripMenuItem.Size = New Size(207, 30)
         GameLevel1ToolStripMenuItem.Text = "Game: Level 1"
         ' 
         ' GameLevel2ToolStripMenuItem
         ' 
         GameLevel2ToolStripMenuItem.Name = "GameLevel2ToolStripMenuItem"
-        GameLevel2ToolStripMenuItem.Size = New Size(224, 30)
+        GameLevel2ToolStripMenuItem.Size = New Size(207, 30)
         GameLevel2ToolStripMenuItem.Text = "Game: Level 2"
         ' 
         ' DataDToolStripMenuItem
@@ -438,7 +466,7 @@ Partial Class Form1
         Name = "Form1"
         ShowIcon = False
         StartPosition = FormStartPosition.CenterScreen
-        Text = resources.GetString("$this.Text")
+        Text = " Llagas, Zedrick N. - Portfolio in PF101 - Object-Oriented Programming "
         MenuStrip1.ResumeLayout(False)
         MenuStrip1.PerformLayout()
         CType(PictureBox1, ComponentModel.ISupportInitialize).EndInit()
@@ -496,5 +524,9 @@ Partial Class Form1
     Friend WithEvents AToolStripMenuItem1 As ToolStripMenuItem
     Friend WithEvents BLaboratoryActivityToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents GameLevel2ToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents AAbstractClassToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents BFindingAndCorrectingErrorsToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents CErrorHandlingToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents DDebuggingToolStripMenuItem As ToolStripMenuItem
 
 End Class

@@ -188,4 +188,24 @@ Public Class Form1
         GameLevel2Homescreen.Show()
         Me.Hide()
     End Sub
+
+    Private Sub AAbstractClassToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles AAbstractClassToolStripMenuItem.Click
+        AbstractClass.Show()
+        Me.Hide()
+    End Sub
+
+    Private Sub BFindingAndCorrectingErrorsToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles BFindingAndCorrectingErrorsToolStripMenuItem.Click
+        FindingAndCorrectingErrors.Show()
+        Me.Hide()
+    End Sub
+
+    Private Sub CErrorHandlingToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles CErrorHandlingToolStripMenuItem.Click
+        ErrorHandling.Show()
+        Me.Hide()
+    End Sub
+
+    Private Sub DDebuggingToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles DDebuggingToolStripMenuItem.Click
+        DebuggingMode.Show()
+        Me.Hide()
+    End Sub
 End Class
